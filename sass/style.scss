@@ -40,7 +40,6 @@ header{
 
         nav{
             display: flex;
-            
             img{
                 height: 40px;
             }
@@ -53,8 +52,42 @@ header{
                 margin-left: 20px;
             }
             ul li{
+                position: relative;
                 list-style: none;
                 margin: 0 20px;
+                cursor: pointer;
+            }
+            ul li:hover{
+                color: white;
+                text-decoration: underline;
+            }
+            ul li::after{
+                content: url("../images/icon-arrow-dark.svg");
+                margin-left: 8px;
+            }
+            .connect{
+                display: none;
+            }
+            .active{
+                display: block;
+                min-width: 150px;
+                background-color: white;
+                color: black;
+                font-weight: 400;
+                padding: 24px;
+                text-align: start;
+                border-radius: 6px;
+                position: absolute;
+                top: 30px;
+                left: -20px;
+                span{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+            .connect span:hover{
+                font-weight: 600;
+                cursor: pointer;
             }
             a{
                 text-decoration: none;
