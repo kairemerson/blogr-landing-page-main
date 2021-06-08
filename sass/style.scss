@@ -3,6 +3,8 @@ $ligth-red-trasnparent: rgba(247, 241, 241, 0.3);
 $transparent-white: rgba(255, 255, 255, .7);
 $overpass: 'Overpass', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;
+$grayish-blue: rgb(75, 88, 98);
+$dark-blue: hsl(208, 49%, 24%);
 
 @mixin button-pattern($color){
     width: 110px;
@@ -23,6 +25,11 @@ $ubuntu: 'Ubuntu', sans-serif;
 body{
     font-family: $ubuntu;
     font-weight: 400;
+    color: $grayish-blue;
+}
+.container{
+    padding: 3% 8%;
+    font-weight: 700;
 }
 
 header{
@@ -33,8 +40,7 @@ header{
     background-position: -550px -1470px;
     background-repeat: no-repeat;
     .container{
-        padding: 3% 8%;
-        font-weight: 700;
+        
         color: $transparent-white;
         text-align: center;
 
@@ -56,14 +62,22 @@ header{
                 list-style: none;
                 margin: 0 20px;
                 cursor: pointer;
+                
             }
             ul li:hover{
                 color: white;
                 text-decoration: underline;
+                
             }
+                             
             ul li::after{
                 content: url("../images/icon-arrow-dark.svg");
                 margin-left: 8px;
+            }
+            li.activea::after{
+                content: url("../images/icon-arrow-light.svg");
+                float: right;
+                transform: rotate(180deg);
             }
             .connect{
                 display: none;
@@ -138,6 +152,44 @@ header{
         font-size: 1.2em;
         letter-spacing: 0.02rem;
         margin-top: 10px;
+    }
+}
+main {
+    overflow: hidden;
+    h1{
+        margin-top: 120px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $dark-blue;
+
+    }
+}
+section.future{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        width: 50%;
+        position: relative;
+        h2{
+            color: $dark-blue;
+            font-size: 1.8em;
+            font-weight: 500;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        p{
+            max-width: 91%;
+            font-weight: 300;
+            line-height: 30px;
+        }
+        img{
+            max-width: 900px;
+            margin-left: 40px;
+            position: absolute;
+            top: -410px;
+        }
     }
 }
 

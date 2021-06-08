@@ -5,7 +5,12 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #4b5862; }
+
+.container {
+  padding: 3% 8%;
+  font-weight: 700; }
 
 header {
   background-color: #ff525d;
@@ -15,8 +20,6 @@ header {
   background-position: -550px -1470px;
   background-repeat: no-repeat; }
   header .container {
-    padding: 3% 8%;
-    font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
     text-align: center; }
     header .container nav {
@@ -40,6 +43,10 @@ header {
       header .container nav ul li::after {
         content: url("../images/icon-arrow-dark.svg");
         margin-left: 8px; }
+      header .container nav li.activea::after {
+        content: url("../images/icon-arrow-light.svg");
+        float: right;
+        transform: rotate(180deg); }
       header .container nav .connect {
         display: none; }
       header .container nav .active {
@@ -124,5 +131,37 @@ header {
     font-size: 1.2em;
     letter-spacing: 0.02rem;
     margin-top: 10px; }
+
+main {
+  overflow: hidden; }
+  main h1 {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #1f3f5b; }
+
+section.future {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  section.future div {
+    width: 50%;
+    position: relative; }
+    section.future div h2 {
+      color: #1f3f5b;
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-top: 70px;
+      margin-bottom: 20px; }
+    section.future div p {
+      max-width: 91%;
+      font-weight: 300;
+      line-height: 30px; }
+    section.future div img {
+      max-width: 900px;
+      margin-left: 40px;
+      position: absolute;
+      top: -410px; }
 
 /*# sourceMappingURL=style.css.map */
