@@ -8,3 +8,16 @@ links.forEach((link)=>{
         link.classList.toggle("activea")
     })
 })
+
+
+//button mobile
+let btnMobile = document.querySelector('.btn-mobile')
+
+btnMobile.addEventListener("click", function(e){
+    if(btnMobile.getAttribute("src") == "./images/icon-hamburger.svg"){
+        btnMobile.src = "./images/icon-close.svg"
+    }else{
+        btnMobile.src = "./images/icon-hamburger.svg"
+        
+    }
+})
