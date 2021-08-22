@@ -21,7 +21,7 @@ header {
   background-repeat: no-repeat; }
   @media screen and (max-width: 375px) {
     header {
-      padding: 60px 0;
+      padding: 40px 0;
       background-size: 1500px;
       background-position: -400px -400px; } }
   header .container {
@@ -31,8 +31,13 @@ header {
       header .container nav {
         justify-content: space-between; }
         header .container nav img.btn-mobile {
+          width: 40px;
           height: 30px;
           display: inline-block; }
+      header .container div {
+        display: none; }
+      header .container ul {
+        display: none; }
       header .container h1 {
         font-size: 2.2em; } }
     header .container nav {
@@ -49,28 +54,45 @@ header {
         margin-left: 20px; }
         @media screen and (max-width: 375px) {
           header .container nav ul {
+            display: none;
             background-color: white;
             color: black;
             flex-direction: column;
-            width: 80%;
+            width: 84%;
             position: absolute;
-            height: 80%;
-            top: 150px; } }
+            height: 70%;
+            top: 130px;
+            border-radius: 6px;
+            padding: 20px;
+            margin-left: 0;
+            -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.7);
+            box-shadow: 1px 1px 16px 0px rgba(0, 0, 0, 0.4); } }
+        @media screen and (min-width: 376px) {
+          header .container nav ul {
+            display: flex !important; } }
       header .container nav ul li {
         position: relative;
         list-style: none;
         margin: 0 20px;
         cursor: pointer; }
+        @media screen and (max-width: 375px) {
+          header .container nav ul li {
+            margin-bottom: 20px; } }
       header .container nav ul li:hover {
         color: white;
         text-decoration: underline; }
+        @media screen and (max-width: 372px) {
+          header .container nav ul li:hover {
+            color: black; } }
       header .container nav ul li::after {
         content: url("../images/icon-arrow-dark.svg");
         margin-left: 8px; }
       header .container nav li.activea::after {
         content: url("../images/icon-arrow-light.svg");
-        float: right;
         transform: rotate(180deg); }
+        @media screen and (max-width: 375px) {
+          header .container nav li.activea::after {
+            content: url("../images/icon-arrow-dark.svg"); } }
       header .container nav .connect {
         display: none; }
       header .container nav .active {
@@ -88,12 +110,28 @@ header {
         header .container nav .active span {
           display: block;
           margin-bottom: 10px; }
+        @media screen and (max-width: 375px) {
+          header .container nav .active {
+            position: relative;
+            padding: 0;
+            text-align: center;
+            left: 0; } }
       header .container nav .connect span:hover {
         font-weight: 600;
         cursor: pointer; }
       header .container nav a {
         text-decoration: none;
         color: #e4dcdc; }
+        @media screen and (max-width: 375px) {
+          header .container nav a {
+            color: rgba(0, 0, 0, 0.555); } }
+      header .container nav div {
+        position: relative; }
+        @media screen and (max-width: 375px) {
+          header .container nav div {
+            top: 400px;
+            left: -13%;
+            color: black; } }
       header .container nav button {
         width: 120px;
         height: 42px;
@@ -107,6 +145,20 @@ header {
         header .container nav button:hover {
           background-color: rgba(247, 241, 241, 0.3);
           color: white; }
+        @media screen and (max-width: 375px) {
+          header .container nav button {
+            width: 120px;
+            height: 42px;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            font-size: .9rem;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: #ff525d;
+            margin-top: 10px; }
+            header .container nav button:hover {
+              background-color: #ff525d; } }
     header .container #start {
       width: 120px;
       height: 42px;
