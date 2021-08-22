@@ -81,7 +81,7 @@ header {
       header .container nav ul li:hover {
         color: white;
         text-decoration: underline; }
-        @media screen and (max-width: 372px) {
+        @media screen and (max-width: 375px) {
           header .container nav ul li:hover {
             color: black; } }
       header .container nav ul li::after {
@@ -96,7 +96,7 @@ header {
             content: url("../images/icon-arrow-dark.svg");
             position: absolute;
             top: 0;
-            left: 120px; } }
+            left: 140px; } }
       header .container nav .connect {
         display: none; }
       header .container nav .active {

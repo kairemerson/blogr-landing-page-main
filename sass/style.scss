@@ -121,7 +121,7 @@ header{
             ul li:hover{
                 color: white;
                 text-decoration: underline;
-                @media screen and (max-width: 372px){
+                @media screen and (max-width: 375px){
                     color: black;
                 }
             }
@@ -139,7 +139,7 @@ header{
                     content: url("../images/icon-arrow-dark.svg");
                     position: absolute;
                     top: 0;
-                    left: 120px;
+                    left: 140px;
                 }
             }
             .connect{
